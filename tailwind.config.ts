@@ -12,6 +12,19 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        'space-grotesk': ['var(--font-space-grotesk)'],
+        'orbitron': ['var(--font-orbitron)'],
+      },
+      keyframes: {
+        'pulse-subtle': {
+          '0%, 100%': { transform: 'scale(1)' },
+          '50%': { transform: 'scale(1.01)' },
+        }
+      },
+      animation: {
+        'pulse-subtle': 'pulse-subtle 3s ease-in-out infinite',
+      }
     },
   },
   plugins: [],
