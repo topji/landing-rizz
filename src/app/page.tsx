@@ -1,6 +1,6 @@
 import NeonIsometricMaze from "./neonGraphic"
 import { FaTwitter, FaTelegram } from "react-icons/fa"
-
+import Link from "next/link"
 export default function Home() {
   return (
     <main className="w-full h-screen overflow-hidden bg-black relative">
