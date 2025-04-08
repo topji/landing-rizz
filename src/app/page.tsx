@@ -33,25 +33,27 @@ export default function Home() {
           <p className="text-l md:text-2xl text-white/40 mb-8 font-space-grotesk">
             Stop being the Exit liquidity. 
           </p>
-          <button className="bg-gradient-to-r from-purple-600 to-purple-800 text-purple-100 px-8 py-3 
-            rounded-lg text-lg font-orbitron tracking-wide 
-            hover:from-purple-700 hover:to-purple-900 
-            transition-all duration-300 ease-in-out
-            shadow-lg shadow-purple-500/20 
-            hover:shadow-purple-500/40 hover:scale-105
-            uppercase font-bold
-            animate-pulse-subtle
-            relative
-            group
-            overflow-hidden">
-            <span className="relative z-10">Enter the Arena</span>
-            <div className="absolute inset-0 bg-gradient-to-r from-purple-600/40 to-purple-800/40 
-              transform scale-x-0 group-hover:scale-x-100 
-              transition-transform duration-500 origin-left"></div>
-            <div className="absolute inset-0 bg-gradient-to-t from-purple-500/20 to-transparent 
-              blur-xl group-hover:opacity-100 opacity-0 
-              transition-opacity duration-500"></div>
-          </button>
+          <Link href="https://docs.rizz.money">
+            <button className="bg-gradient-to-r from-purple-600 to-purple-800 text-purple-100 px-8 py-3 
+              rounded-lg text-lg font-orbitron tracking-wide 
+              hover:from-purple-700 hover:to-purple-900 
+              transition-all duration-300 ease-in-out
+              shadow-lg shadow-purple-500/20 
+              hover:shadow-purple-500/40 hover:scale-105
+              uppercase font-bold
+              animate-pulse-subtle
+              relative
+              group
+              overflow-hidden">
+              <span className="relative z-10">Enter the Arena</span>
+              <div className="absolute inset-0 bg-gradient-to-r from-purple-600/40 to-purple-800/40 
+                transform scale-x-0 group-hover:scale-x-100 
+                transition-transform duration-500 origin-left"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-purple-500/20 to-transparent 
+                blur-xl group-hover:opacity-100 opacity-0 
+                transition-opacity duration-500"></div>
+            </button>
+          </Link>
         </div>
       </div>
     </main>
