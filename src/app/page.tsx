@@ -33,7 +33,7 @@ export default function Home() {
           <p className="text-l md:text-2xl text-white/40 mb-8 font-space-grotesk">
             Stop being the Exit liquidity. 
           </p>
-          <Link href="https://docs.rizz.money">
+          <Link href="https://app.rizz.money">
             <button className="bg-gradient-to-r from-purple-600 to-purple-800 text-purple-100 px-8 py-3 
               rounded-lg text-lg font-orbitron tracking-wide 
               hover:from-purple-700 hover:to-purple-900 
