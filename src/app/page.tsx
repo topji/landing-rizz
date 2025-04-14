@@ -45,7 +45,7 @@ export default function Home() {
               relative
               group
               overflow-hidden">
-              <span className="relative z-10">Trade Now</span>
+              <span className="relative z-10">Swipe Now</span>
               <div className="absolute inset-0 bg-gradient-to-r from-purple-600/40 to-purple-800/40 
                 transform scale-x-0 group-hover:scale-x-100 
                 transition-transform duration-500 origin-left"></div>
