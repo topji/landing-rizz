@@ -14,7 +14,7 @@ export default function Home() {
             rizz Money
           </div>
           <div className="flex gap-4">
-            <a href="https://twitter.com" className="text-white hover:text-purple-700 transition-colors">
+            <a href="https://twitter.com/rizzprotocol" className="text-white hover:text-purple-700 transition-colors">
               <FaTwitter size={24} />
             </a>
             <a href="https://telegram.org" className="text-white hover:text-purple-700 transition-colors">
@@ -28,7 +28,7 @@ export default function Home() {
           <h1 className="text-5xl md:text-6xl font-bold font-space-grotesk mb-6 
             bg-gradient-to-r from-white via-white/90 to-white/60 bg-clip-text text-transparent
             tracking-tight leading-tight">
-            Where only the top degens gamble
+            Memes, Memes, Memes.....
           </h1>
           <p className="text-l md:text-2xl text-white/40 mb-8 font-space-grotesk">
             Stop being the Exit liquidity. 
@@ -45,7 +45,7 @@ export default function Home() {
               relative
               group
               overflow-hidden">
-              <span className="relative z-10">Enter the Arena</span>
+              <span className="relative z-10">Trade Now</span>
               <div className="absolute inset-0 bg-gradient-to-r from-purple-600/40 to-purple-800/40 
                 transform scale-x-0 group-hover:scale-x-100 
                 transition-transform duration-500 origin-left"></div>
