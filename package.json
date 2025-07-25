@@ -1,7 +1,8 @@
 {
-  "name": "rizzland",
+  "name": "rizz-money",
   "version": "0.1.0",
   "private": true,
+  "description": "Tokenized US Stocks Trading Platform - Trade tokenized US stocks with your crypto wallet",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

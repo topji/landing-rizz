@@ -1,6 +1,13 @@
 import type { Metadata } from "next";
-import { Space_Grotesk, Orbitron } from "next/font/google";
+import { Inter, Space_Grotesk, Orbitron } from "next/font/google";
 import "./globals.css";
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  weight: ["400", "500", "600", "700"],
+  display: "swap",
+});
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
@@ -13,8 +20,8 @@ const orbitron = Orbitron({
 });
 
 export const metadata: Metadata = {
-  title: "rizzLand - Degen Meme Gambling",
-  description: "Right or left swipe your favorite memes all day",
+  title: "rizz.money - Tokenized US Stocks Wallet",
+  description: "Trade tokenized US stocks with your crypto wallet",
 };
 
 export default function RootLayout({
@@ -23,7 +30,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={`${spaceGrotesk.variable} ${orbitron.variable}`}>
+    <html lang="en" className={`${inter.variable} ${spaceGrotesk.variable} ${orbitron.variable}`}>
       <body>{children}</body>
     </html>
   );

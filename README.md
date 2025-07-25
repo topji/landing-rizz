@@ -1,4 +1,13 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# rizz.money - Tokenized US Stocks Trading Platform
+
+A modern, professional trading platform for tokenized US stocks. Trade with your crypto wallet seamlessly.
+
+## Features
+
+- **Real-time Trading**: Execute trades instantly with real-time market data
+- **Crypto Wallet Integration**: Connect your existing crypto wallet
+- **Secure & Reliable**: Enterprise-grade security for your investments
+- **Professional UI**: Clean, modern interface designed for serious traders
 
 ## Getting Started
 
@@ -18,7 +27,20 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Tech Stack
+
+- **Framework**: Next.js 15 with App Router
+- **Styling**: Tailwind CSS with custom USDT green theme
+- **Fonts**: Inter (primary), Space Grotesk, Orbitron
+- **Icons**: React Icons
+- **Animation**: Custom canvas animations with USDT green color scheme
+
+## Design System
+
+- **Primary Color**: USDT Green (#1DBF73)
+- **Background**: Dark gradient theme
+- **Typography**: Inter font family for professional appearance
+- **Theme**: Professional financial trading platform aesthetic
 
 ## Learn More
 
@@ -26,8 +48,6 @@ To learn more about Next.js, take a look at the following resources:
 
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
 ## Deploy on Vercel
 

@@ -3,19 +3,123 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #111827;
+  --foreground: #ffffff;
+  --usdt-green: #1DBF73;
+  --usdt-dark: #10B981;
+  --gray-800: #1F2937;
+  --gray-700: #374151;
+  --gray-400: #9CA3AF;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #ffffff;
+    --foreground: #111827;
   }
+}
+
+* {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  background: linear-gradient(to bottom right, #111827, #1F2937, #000000);
+  min-height: 100vh;
+  font-weight: 400;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Enhanced button styles */
+button {
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+}
+
+button:focus {
+  outline: none;
+  ring: 2px;
+  ring-color: #1DBF73;
+  ring-offset: 2px;
+}
+
+/* Enhanced link styles */
+a {
+  -webkit-tap-highlight-color: transparent;
+  text-decoration: none;
+}
+
+a:focus {
+  outline: none;
+  ring: 2px;
+  ring-color: #1DBF73;
+  ring-offset: 2px;
+}
+
+/* Professional text selection */
+::selection {
+  background: rgba(29, 191, 115, 0.3);
+  color: white;
+}
+
+::-moz-selection {
+  background: rgba(29, 191, 115, 0.3);
+  color: white;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1F2937;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #374151;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1DBF73;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Professional focus styles */
+.focus-ring {
+  @apply focus:outline-none focus:ring-2 focus:ring-usdt focus:ring-offset-2 focus:ring-offset-gray-900;
+}
+
+/* Enhanced backdrop blur */
+.backdrop-blur-sm {
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+/* Professional shadows */
+.shadow-professional {
+  box-shadow: 
+    0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04),
+    0 0 0 1px rgba(255, 255, 255, 0.05);
+}
+
+/* Gradient text enhancement */
+.gradient-text {
+  background: linear-gradient(135deg, #ffffff 0%, #e5e7eb 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
