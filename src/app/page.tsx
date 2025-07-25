@@ -1,5 +1,5 @@
 import NeonIsometricMaze from "./neonGraphic"
-import { FaTwitter, FaChartLine, FaWallet, FaShieldAlt, FaGlobe, FaArrowRight } from "react-icons/fa"
+import { FaTwitter, FaGlobe, FaArrowRight } from "react-icons/fa"
 import Link from "next/link"
 
 export default function Home() {
