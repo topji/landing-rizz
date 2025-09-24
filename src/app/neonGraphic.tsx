@@ -152,7 +152,7 @@ const NeonIsometricMaze: React.FC = () => {
         x.lineWidth = 1
         x.beginPath()
         x.arc(circle.x, circle.y, size, 0, Math.PI * 2)
-        x.stroke()
+          x.stroke()
       })
       
       // Enhanced floating particles with trails

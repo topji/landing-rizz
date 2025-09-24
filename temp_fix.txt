@@ -1,0 +1,3 @@
+              <button className="px-6 py-3 bg-usdt hover:bg-usdt-dark text-black font-semibold rounded-lg transition-all duration-300 hover:scale-105 whitespace-nowrap">
+                Let&apos;s go
+              </button>

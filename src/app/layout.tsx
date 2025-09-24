@@ -20,7 +20,7 @@ const orbitron = Orbitron({
 });
 
 export const metadata: Metadata = {
-  title: "rizz.money - Tokenized US Stocks Wallet",
+  title: "lexa.money - Tokenized US Stocks Wallet",
   description: "Trade tokenized US stocks with your crypto wallet",
 };
 

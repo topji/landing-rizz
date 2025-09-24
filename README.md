@@ -1,4 +1,4 @@
-# rizz.money - Tokenized US Stocks Trading Platform
+# LEXA - Tokenized US Stocks Trading Platform
 
 A modern, professional trading platform for tokenized US stocks. Trade with your crypto wallet seamlessly.
 
