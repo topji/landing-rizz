@@ -77,14 +77,14 @@ const NeonIsometricMaze: React.FC = () => {
           )
           
           if (distance < Math.min(w, h) * 0.3) {
-            const opacity = Math.max(0, 0.4 - distance / (Math.min(w, h) * 0.3) * 0.3)
+            const opacity = 0.7 * Math.max(0, 0.4 - distance / (Math.min(w, h) * 0.3) * 0.3)
             
-            // Create animated gradient line
+            // Create animated gradient line (70% opacity)
             const gradient = x.createLinearGradient(circle.x, circle.y, target.x, target.y)
-            gradient.addColorStop(0, `rgba(29, 191, 115, ${opacity * 0.8})`)
-            gradient.addColorStop(0.3, `rgba(29, 191, 115, ${opacity * 0.3})`)
-            gradient.addColorStop(0.7, `rgba(29, 191, 115, ${opacity * 0.1})`)
-            gradient.addColorStop(1, `rgba(29, 191, 115, ${opacity * 0.8})`)
+            gradient.addColorStop(0, `rgba(62, 199, 244, ${opacity * 0.8})`)
+            gradient.addColorStop(0.3, `rgba(58, 123, 255, ${opacity * 0.3})`)
+            gradient.addColorStop(0.7, `rgba(31, 75, 255, ${opacity * 0.1})`)
+            gradient.addColorStop(1, `rgba(62, 199, 244, ${opacity * 0.8})`)
             
             x.strokeStyle = gradient
             x.lineWidth = 1.5
@@ -100,11 +100,12 @@ const NeonIsometricMaze: React.FC = () => {
       allCircles.forEach((circle, index) => {
         const size = circle.size * circle.pulse
         
-        // Multiple glow layers for depth
+        // Multiple glow layers for depth (opacity 70% = 0.7)
+        const circleOpacity = 0.7
         const glowLayers = [
-          { radius: size * 3, opacity: 0.15 },
-          { radius: size * 2, opacity: 0.25 },
-          { radius: size * 1.5, opacity: 0.35 }
+          { radius: size * 3, opacity: 0.15 * circleOpacity },
+          { radius: size * 2, opacity: 0.25 * circleOpacity },
+          { radius: size * 1.5, opacity: 0.35 * circleOpacity }
         ]
         
         glowLayers.forEach(glow => {
@@ -112,9 +113,9 @@ const NeonIsometricMaze: React.FC = () => {
             circle.x, circle.y, 0,
             circle.x, circle.y, glow.radius
           )
-          glowGradient.addColorStop(0, `rgba(29, 191, 115, ${glow.opacity})`)
-          glowGradient.addColorStop(0.6, `rgba(29, 191, 115, ${glow.opacity * 0.3})`)
-          glowGradient.addColorStop(1, "rgba(29, 191, 115, 0)")
+          glowGradient.addColorStop(0, `rgba(62, 199, 244, ${glow.opacity})`)
+          glowGradient.addColorStop(0.6, `rgba(58, 123, 255, ${glow.opacity * 0.3})`)
+          glowGradient.addColorStop(1, "rgba(62, 199, 244, 0)")
           
           x.fillStyle = glowGradient
           x.beginPath()
@@ -122,15 +123,15 @@ const NeonIsometricMaze: React.FC = () => {
           x.fill()
         })
         
-        // Main circle with enhanced gradient
+        // Main circle with enhanced gradient (opacity 70%)
         const circleGradient = x.createRadialGradient(
           circle.x, circle.y, 0,
           circle.x, circle.y, size
         )
-        circleGradient.addColorStop(0, "rgba(29, 191, 115, 0.9)")
-        circleGradient.addColorStop(0.4, "rgba(29, 191, 115, 0.6)")
-        circleGradient.addColorStop(0.8, "rgba(29, 191, 115, 0.2)")
-        circleGradient.addColorStop(1, "rgba(29, 191, 115, 0)")
+        circleGradient.addColorStop(0, "rgba(62, 199, 244, 0.7)")
+        circleGradient.addColorStop(0.4, "rgba(58, 123, 255, 0.5)")
+        circleGradient.addColorStop(0.8, "rgba(31, 75, 255, 0.15)")
+        circleGradient.addColorStop(1, "rgba(62, 199, 244, 0)")
         
         x.fillStyle = circleGradient
         x.beginPath()
@@ -147,8 +148,8 @@ const NeonIsometricMaze: React.FC = () => {
         x.arc(highlightX, highlightY, highlightSize, 0, Math.PI * 2)
         x.fill()
         
-        // Subtle border
-        x.strokeStyle = `rgba(29, 191, 115, ${0.4 + Math.sin(t + index) * 0.2})`
+        // Subtle border (70% opacity)
+        x.strokeStyle = `rgba(62, 199, 244, ${0.7 * (0.4 + Math.sin(t + index) * 0.2)})`
         x.lineWidth = 1
         x.beginPath()
         x.arc(circle.x, circle.y, size, 0, Math.PI * 2)
@@ -170,16 +171,16 @@ const NeonIsometricMaze: React.FC = () => {
           const trailX = centerX + Math.cos(trailAngle) * trailRadius
           const trailY = centerY + Math.sin(trailAngle) * trailRadius
           const trailSize = size * (1 - trail * 0.2)
-          const trailOpacity = (0.3 - trail * 0.05) * (0.5 + Math.sin(t + i) * 0.3)
+          const trailOpacity = 0.7 * (0.3 - trail * 0.05) * (0.5 + Math.sin(t + i) * 0.3)
           
-          x.fillStyle = `rgba(29, 191, 115, ${trailOpacity})`
+          x.fillStyle = `rgba(62, 199, 244, ${trailOpacity})`
           x.beginPath()
           x.arc(trailX, trailY, trailSize, 0, Math.PI * 2)
           x.fill()
         }
         
-        // Main particle
-        x.fillStyle = `rgba(29, 191, 115, ${0.6 + Math.sin(t * 2 + i) * 0.3})`
+        // Main particle (70% opacity)
+        x.fillStyle = `rgba(95, 211, 255, ${0.7 * (0.6 + Math.sin(t * 2 + i) * 0.3)})`
         x.beginPath()
         x.arc(particleX, particleY, size, 0, Math.PI * 2)
         x.fill()
@@ -187,7 +188,7 @@ const NeonIsometricMaze: React.FC = () => {
       
       // Add subtle background grid effect
       const gridSize = 50
-      x.strokeStyle = "rgba(29, 191, 115, 0.05)"
+      x.strokeStyle = "rgba(58, 123, 255, 0.06)"
       x.lineWidth = 0.5
       
       for (let i = 0; i < w; i += gridSize) {

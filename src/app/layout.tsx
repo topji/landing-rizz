@@ -20,8 +20,9 @@ const orbitron = Orbitron({
 });
 
 export const metadata: Metadata = {
-  title: "lexa.money - Tokenized US Stocks Wallet",
-  description: "Trade tokenized US stocks with your crypto wallet",
+  title: "Lexa — Prediction Markets, Reimagined",
+  description:
+    "Ask. Allocate. Win — Lexa turns your beliefs into real positions instantly.",
 };
 
 export default function RootLayout({
