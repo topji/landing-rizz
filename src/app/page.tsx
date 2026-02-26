@@ -1,7 +1,6 @@
 import NeonIsometricMaze from "./neonGraphic"
 import { FaGlobe } from "react-icons/fa"
 import Navbar from "../components/Navbar"
-import Logo from "../components/Logo"
 import Link from "next/link"
 
 export default function Home() {
@@ -14,12 +13,6 @@ export default function Home() {
 
         <div className="flex-1 flex flex-col items-center justify-center text-center px-4 sm:px-6">
           <div className="relative w-full max-w-6xl">
-            <div className="flex justify-center mb-8">
-              <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full flex items-center justify-center animate-pulse bg-gradient-lexa shadow-lexa-glow">
-                <Logo size={32} />
-              </div>
-            </div>
-
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold font-inter mb-6 sm:mb-8 tracking-tight leading-tight drop-shadow-2xl">
               <div className="overflow-hidden mb-2">
                 <span className="inline-block animate-slide-up text-lexa-text relative">

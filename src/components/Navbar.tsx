@@ -12,13 +12,8 @@ export default function Navbar() {
         <div className="absolute inset-0 bg-gradient-to-br from-white/5 via-transparent to-transparent rounded-3xl" />
         <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-lexa-accent via-transparent to-lexa-accent opacity-20 animate-pulse" />
 
-        <Link href="/" className="relative z-10 flex items-center gap-3 group">
-          <div className="relative">
-            <div className="w-8 h-8 bg-gradient-lexa rounded-xl flex items-center justify-center shadow-lg shadow-lexa-mid/40 group-hover:shadow-lexa-glow transition-all duration-300 group-hover:scale-110">
-              <Logo size={20} />
-            </div>
-            <div className="absolute inset-0 w-8 h-8 bg-lexa-accent/30 rounded-xl blur-sm group-hover:bg-lexa-glow/40 transition-all duration-300" />
-          </div>
+        <Link href="/" className="relative z-10 flex items-center gap-3 group transition-transform duration-300 hover:scale-105">
+          <Logo size={32} />
           <div className="text-lexa-text text-lg sm:text-xl font-bold font-inter tracking-wider">
             lexa.money
           </div>
