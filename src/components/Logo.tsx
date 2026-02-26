@@ -10,7 +10,7 @@ export default function Logo({ className = "", size = 32 }: LogoProps) {
 
   return (
     <Image
-      src="/lexa-logo.png"
+      src="https://lime-overseas-impala-240.mypinata.cloud/ipfs/bafkreidb34c5fp5b326px7mb2o62jaat6mkdwlili2emhdwmu5dhluz6ya"
       alt="Lexa logo"
       width={dimension}
       height={dimension}
